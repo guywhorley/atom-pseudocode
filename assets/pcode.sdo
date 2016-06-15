@@ -1,0 +1,45 @@
+# HEADER KEYWORDS
+
+File: Filename: Name: Author: Email: Description:
+Desc: Date: History: Version: Ver: Release:
+Since: Code: Link: Git:
+
+# COMMENTS
+loop through the array # A python/Ruby-style comment
+for each element in the array    COMMENT:another comment
+
+# NUMBERS, NUMERICAL OPERATORS AND ASSIGNMENT OPERATORS
+a <-- (x * y) + (7 / 0) % 2
+b := 42
+c = 'Santa'
+if 'name' == 'Clause'
+
+# AND, OR AND NOT
+&& || !
+AND NOT OR XOR
+
+# COMPARISON OPERATORS
+LT GT EQ EQUALS IS TYPEOF
+== < >
+
+# NODE-BASED KEYWORDS
+list.next list.head list.previous
+list.prev list.left list.right list.tail
+
+# CONTROL STRUCTURES
+Start START End END Iterate ITERATE EndIterate EndIterate
+IF If ELSE Else THEN Then ENDIF Endif
+WHILE While ENDWHILE Endwhile
+REPEAT Repeat UNTIL Until
+GOTO Goto BREAK Break CONTINUE Continue
+SELECT Select CASE Case DEFAULT Default
+ENDSELECT Endselect
+FOR For EACH Each ENDFOR Endfor
+
+# KEYWORDS FOR GENERAL PURPOSE OPERATIONS (Storage)
+DOOP NOOP Read READ Write Write Output OUTPUT Process Process
+Get GET Put PUT Input INPUT Save Save
+
+# CONSTANTS KEYWORDS
+YES NO TRUE True FALSE False NONE None
+NULL Null null UNDEFINED Undefined

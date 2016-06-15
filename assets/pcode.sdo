@@ -38,7 +38,7 @@ FOR For EACH Each ENDFOR Endfor
 
 # KEYWORDS FOR GENERAL PURPOSE OPERATIONS (Storage)
 DOOP NOOP Read READ Write Write Output OUTPUT Process Process
-Get GET Put PUT Input INPUT Save Save
+Get GET Put PUT Input INPUT Save Save Yield Yield
 
 # CONSTANTS KEYWORDS
 YES NO TRUE True FALSE False NONE None

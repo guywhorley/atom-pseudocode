@@ -53,7 +53,7 @@ atom-text-editor, :host {
 }
 
 .line {
-	&.cursor-line { text-decoration: underline; }
+	&.cursor-line { text-decoration: overline; }
 }
 
 atom-text-editor .search-results .marker .region,
@@ -67,7 +67,6 @@ atom-text-editor .search-results .marker.current-result .region,
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
-// PSEUDOCODE THEME STARTS HERE
 .constant {
   color: @orange;
   &.language {
@@ -114,7 +113,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	color: @light-gray;
 	font-size: .9em;
 	font-style: italic;
-	&.unit.css { color: darken(@red,10%);}
+	&.unit.css, &.unit.scss { color: darken(@red,10%);}
   }
   &.keyword.operator.comparison { color: @green; }
   &.keyword.operator.comparison.symbols { color: @green; }
@@ -136,8 +135,8 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .punctuation {
-  &.separator.key-value.css { color: @white; }
-  &.terminator.rule.css { color: @white; }
+  &.separator.key-value.css, &.separator.key-value.scss { color: @white; }
+  &.terminator.rule.css, &.terminator.rule.scss { color: @white; }
   &.definition {
     &.tag {
 		color: @white;
@@ -156,11 +155,12 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .support {
-  &.type.property-name.css { color: @light-gray;}
+  &.type.property-name.css, &.type.property-name.scss { color: @light-gray;}
   &.constant.dom, &.constant.js { color: @dark-red;}
   &.constant.color.w3c-standard-color-name.css { color: @green; }
-  &.constant.font-name.css { color: @green; }
-  &.constant.property-value.css { color: @forest-green;}
+  &.constant.color.w3c-standard-color-name.scss { color: @green; }
+  &.constant.font-name.css, &.constant.font-name.scss { color: @green; }
+  &.constant.property-value.css, &.constant.property-value.scss { color: @forest-green;}
   &.class { color: lighten(@cyan,10%); }
   &.function  {
     color: @cyan;
@@ -185,21 +185,21 @@ atom-text-editor .search-results .marker.current-result .region,
 	font-weight:500;
 	&.inline.any, &.script { color: @purple; }
 	&.style { color: lighten(@bright-orange,10%); }
-	&.css { color: @light-orange;}
+	&.css, &.scss { color: @light-orange; font-size: 1.0em; }
 	}
 	&.other.attribute-name {
     	color: @light-gray;
 		text-decoration: underline;
-		font-size: 0.9em;
 		font-weight:500;
-		&.id.css { color: @light-orange; text-decoration: none; }
+		&.id.css, &.id.scss { color: @light-orange; text-decoration: none; }
 		&.id.html{ color: @bright-orange; }
-		&.class.css { color: @light-orange; text-decoration: none; }
-		&.pseudo-class.css { color: @red; text-decoration: none;}
+		&.class.css, &.class.scss { color: @light-orange; text-decoration: none; font-size:1.0em; }
+		&.pseudo-class.css, &.pseudo-class.scss { color: @red; text-decoration: none; font-size:1.0em;}
 	}
 }
 .meta { 
-	&.property-value.css { color: lighten(@forest-green,10%);}
+	&.property-value.css, &.property-value.scss { color: lighten(@forest-green,10%);}
+	&.selector.css, &.selector.scss { color: @light-orange; font-size: 0.9em; }
 }
 
 .none { color: @syntax-text-color; }
@@ -223,6 +223,7 @@ atom-text-editor .search-results .marker.current-result .region,
   &.raw.inline { color: @green; }
 }
 
+.source.css { color: @light-orange;}
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
   &.heading {

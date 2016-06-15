@@ -1,0 +1,72 @@
+{
+     "scopeName": "source.pseudocode",
+     "name": "pseudocode",
+     "fileTypes":
+     [
+        "pc",
+        "sdo",
+        "ptx"
+    ],
+    "patterns":
+    [
+		{
+			"match": "\\b\\d+(\\.\\d+)?\\b",
+            "name": "constant.numeric.pseudocode"
+        },
+        {
+            "match" : "\\B(\\+{1,1}|\\-{1,1}|\\*{1,1}|\\/{1,1}|\\%{1,1})\\B",
+            "name" : "constant.numeric.operator.pseudocode"
+        },
+        {
+            "match": "\\b(START|Start|END|End|Iterate|ITERATE|EndIterate|ENDITERATE|IF|If|ELSE|Else|THEN|Then|ENDIF|Endif|WHILE|While|ENDWHILE|Endwhile|REPEAT|Repeat|UNTIL|Until|GOTO|Goto|BREAK|Break|CONTINUE|Continue|SELECT|Select|CASE|Case|DEFAULT|Default|ENDSELECT|Endselect|FOR|For|EACH|Each|ENDFOR|Endfor)\\b",
+            "name": "keyword.control.pseudocode"
+        },
+		{
+			"match" :"\\b(\\.next|\\.previous|\\.prev|\\.head|..\tail|\\.left|\\.right)\\b",
+			"name" : "variable.pseudocode"
+		},
+        {
+            "match" : "\\b(DO{2,2}P|NO{2,2}P|Read|READ|Write|WRITE|Output|OUTPUT|Process|PROCESS|GET|Get|PUT|Put|INPUT|Input|SAVE|Save)\\b",
+            "name" : "storage.pseudocode"
+        },
+        {
+            "match" : "\\b(YES|NO|TRUE|True|FALSE|False|NONE|None|NULL|Null|null|UNDEFINED|Undefined)\\b",
+            "name" : "constant.language.pseudocode"
+        },
+        {
+            "match": "\\\"[^\"]*\\\"",
+            "name": "string.quoted.double.pseudocode"
+        },
+        {
+            "match": "(AND|NOT|OR|XOR)",
+            "name": "constant.other.symbol.pseudocode"
+        },
+        {
+            "match": "(&{2,2}|\\|{2,2}|\\!)",
+            "name": "constant.other.symbol.pseudocode"
+        },
+        {
+            "match": "\\w(SET)\\b",
+            "name": "keyword.operator.assignment.pseudocode"
+        },
+        {   "match": "(={1,1}|<--|:=|\\+=)",
+            "name": "keyword.operator.assignment.symbols.pseudocode"
+        },
+        {
+            "match": "(#.*|COMMENT:.*)$",
+            "name": "comment.line.pseudocode"
+        },
+        {
+            "match": "(File:|Name:|Filename:|Author:|Auth:|Email:|Description:|Desc:|Date:|History:|Version:|Ver:|Release:|Rel:|Since:|Code:|Link:|Git:).*$",
+            "name": "keyword.other.pseudocode"
+        },
+        {
+            "match": "\\b(LT|GT|EQ|EQUALS|IS|TYPEOF)\\b",
+            "name": "keyword.operator.comparison.pseudocode"
+        },
+        {
+            "match": "(={2,3}|<|>)",
+            "name": "keyword.operator.comparison.symbols.pseudocode"
+        }
+    ]
+}

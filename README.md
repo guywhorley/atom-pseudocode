@@ -27,7 +27,7 @@ The pseudocode language package has been configured to recogined three different
 
 *Pseudocode Keywords*
 
-The following screenshots show the range of keword:
+The following screenshots show the range of 'pseudocode' keywords and thematic styles:
 
 ![Image of pseudocode keywords](https://github.com/guywhorley/atom-pseudocode/blob/master/assets/atom1.PNG)
 

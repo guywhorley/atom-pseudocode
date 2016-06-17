@@ -16,7 +16,7 @@ Pseudocode-syntax is a dark-themed set of styles for atom. I have not attempted 
 
 1. Place the folder 'pseudocode-syntax' into the \{ATOM_ROOT_DIR\}/packages directory.
 2. Place the folder 'language-pseudocode' into the \{ATOM_ROOT_DIR\}/packages directory.
-3. In the Atom Editor > Packages > Settings View > Manage Themes: set "Sytax Theme" = Pseudocode.
+3. In the Atom Editor > Packages > Settings View > Manage Themes: set "Syntax Theme" = Pseudocode.
 
 ## package: <q>language-pseudocode</q>
 
@@ -27,7 +27,7 @@ The pseudocode language package has been configured to recogined three different
 
 *Pseudocode Keywords*
 
-The following screenshots show the range of 'pseudocode' keywords and thematic styles:
+The following screenshots show the range of 'pseudocode' keywords and thematic style:
 
 ![Image of pseudocode keywords](https://github.com/guywhorley/atom-pseudocode/blob/master/assets/atom1.PNG)
 
